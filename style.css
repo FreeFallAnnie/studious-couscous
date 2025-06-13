@@ -140,3 +140,50 @@ img {
   cursor: zoom-out;
 }
 
+/* ========== Responsive Tweaks ========== */
+
+@media (max-width: 768px) {
+  main {
+    padding: 1.2em;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .carousel {
+    gap: 1rem;
+    scroll-padding-left: 0.5rem;
+  }
+
+  .carousel img {
+    width: 140px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    font-size: 0.95em;
+    padding: 0.5em 0;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0 8px;
+  }
+
+  .carousel img {
+    width: 120px;
+    height: 90px;
+  }
+
+  .lightbox-overlay img {
+    max-width: 95%;
+    max-height: 80%;
+  }
+}
