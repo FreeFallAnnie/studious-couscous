@@ -1,47 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #1e1e1e;
+  color: #f4f4f4;
 }
 
 header {
-  background: #333;
+  background: #0f0f0f;
   color: #fff;
-  padding: 1em 0;
+  padding: 1.5em 0;
   text-align: center;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
 }
 
 nav {
-  background: #444;
+  background: #2b2b2b;
   text-align: center;
-  padding: 0.5em 0;
+  padding: 0.8em 0;
 }
 
 nav a {
-  color: white;
+  color: #ffcc70;
   margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
+  color: #ffd57e;
   text-decoration: underline;
 }
 
 main {
   padding: 2em;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
-  background-color: #fff;
+  background-color: #fafafa;
+  color: #222;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 section {
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
 }
 
-h1, h2 {
-  color: #222;
+h1 {
+  font-size: 2.2em;
+  color: #ffcc70;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: #006d77;
+  border-left: 4px solid #ffcc70;
+  padding-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel styles */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scroll-padding-left: 1rem;
+}
+
+.carousel img {
+  flex: 0 0 auto;
+  width: 320px;
+  height: auto;
+  scroll-snap-align: center;
+  border-radius: 12px;
+  border: 3px solid #ffcc70;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
 }
