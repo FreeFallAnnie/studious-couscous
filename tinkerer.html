@@ -4,40 +4,101 @@
   <meta charset="UTF-8">
   <title>Tinkerer</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .carousel img {
+      flex: 0 0 auto;
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      scroll-snap-align: center;
+      border: 2px solid #ccc;
+    }
+
+    .carousel::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .carousel::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Tinkerer</h1>
   </header>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="./">Home</a>
     <a href="littlefuzzy.html">A Little Fuzzy</a>
     <a href="showme.html">Show Me (the Data)</a>
     <a href="tinkerer.html">Tinkerer</a>
   </nav>
   <main>
     <section>
-      <h2>Skill Description</h2>
-      <p>The mindset of exploration, experimentation, and hands-on learning. Applying across tools like 3D printing, laser cutting, and electronics.</p>
+      <h2>Tinkerer</h2>
+      <p>Tinkerer is a mindset I made-up that can underpin any hands-on activity. The skill of tinkering, is about playing, experimenting, and working to get better by incrementally exploring – following my learning scale, it’s trying something others have done, mimic them, change it up, then see if you can work towards independence, and sharing what I’ve learnt.</p>
     </section>
 
     <section>
       <h2>Subskills</h2>
       <ul>
-        <li>3D Printing</li>
-        <li>Laser Cutting</li>
-        <li>Prototyping / Electronics</li>
+        <li>A = 3D Printing</li>
+        <li>B = Programming</li>
+        <li>C = Laser cutting</li>
       </ul>
     </section>
 
     <section>
-      <h2>Evidence and Reflections</h2>
-      <p>[Images of builds, description of trial & error, peer feedback, learning notes]</p>
+      <h2>3D Printing (A)</h2>
+      <p>Throughout this term so far I have been exposed to many opportunities and encouraged to grow by cohort members and tutors. I have not progressed as far as I would have liked with 3D printing. While I was able to create my own 3D model, I needed assistance to make it viable.</p>
+
+      <div class="carousel">
+        <img src="images/tinkercad_design.jpg" alt="TinkerCad 3D design">
+        <img src="images/fusion360_design.jpg" alt="Fusion360 3D design">
+        <img src="images/3d_printer.jpg" alt="3D printer printing">
+      </div>
+
+      <h2>Programming (B)</h2>
+      <p>My programming skills have been developing throughout the term. However, I am not fully comfortable creating my own programs. I use prompts, and assistance to code. In my Demo Day process, I included comments on the good, and bad of coding. Below are images from my journey that I am proud of.</p>
+
+      <div class="carousel">
+        <img src="images/raspberry_playlist.jpg" alt="Following a Raspberry Pi playlist">
+        <img src="images/fritzing.jpg" alt="Using Fritzing software for designing">
+        <img src="images/huskylens.jpg" alt="Machine learning with HuskyLens">
+        <img src="images/bluetooth_issue.jpg" alt="Running into Bluetooth issues">
+        <img src="images/github_flask.jpg" alt="Connecting to GitHub & using Flask to create a website">
+        <img src="images/reddit_help.jpg" alt="Problem-solving with Reddit">
+        <img src="images/gpt_api.jpg" alt="Using GPT api calls to generate a response">
+        <img src="images/website_result.jpg" alt="Turning my project into a website">
+      </div>
+
+      <h2>Laser cutting (C)</h2>
+      <p>I began laser cutting in the workshop run by the Maker’s Space. This was a light introduction, which gave a sense of familiarity for the tools involved. Though this was not enough to have me feeling confident, I found I was curious about exploring.</p>
+      <p>When I went to create my ‘Brain Box’ I set a task that was a low entry point. A templated box which helped me build confidence in the programs to use. I utilised that knowledge to then etch my own design.</p>
+      <p>Though my knowledge is limited, when Vaswati needed help with her design, I was able to assist.</p>
+
+      <div class="carousel">
+        <img src="images/laser_box_template.jpg" alt="A templated box for laser cutting">
+        <img src="images/test_pieces.jpg" alt="Test pieces to test joins">
+        <img src="images/box_cutting.jpg" alt="Box being cut">
+        <img src="images/box_assembled.jpg" alt="Putting the box together">
+        <img src="images/layered_design.jpg" alt="Layered design">
+        <img src="images/end_effect.jpg" alt="End effect">
+      </div>
     </section>
 
     <section>
-      <h2>Growth Across Checkpoints</h2>
-      <p>[Highlight what changed and what you learned]</p>
+      <h2>Checkpoint</h2>
+        <img src="images/tinkerercriteria.jpg" alt="Checkpoint 1 to Checkpoint 2">
     </section>
   </main>
 </body>
