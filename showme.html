@@ -4,40 +4,82 @@
   <meta charset="UTF-8">
   <title>Show Me (the Data)</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .carousel img {
+      flex: 0 0 auto;
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      scroll-snap-align: center;
+      border: 2px solid #ccc;
+    }
+
+    .carousel::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .carousel::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Show Me (the Data)</h1>
   </header>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="./">Home</a>
     <a href="littlefuzzy.html">A Little Fuzzy</a>
     <a href="showme.html">Show Me (the Data)</a>
     <a href="tinkerer.html">Tinkerer</a>
   </nav>
   <main>
     <section>
-      <h2>Skill Description</h2>
-      <p>Includes data visualisation, modelling and simulation. Currently exploring Python and Agent-based modelling.</p>
+      <h2>Show Me (the Data)</h2>
+      <p>Show Me (the Data) is about data and presentation. The subskills include data visualisation, modelling and simulation with agent-based modelling, including python and NetLogo, along with the addition of storytelling with data.</p>
     </section>
 
     <section>
       <h2>Subskills</h2>
       <ul>
-        <li>Data Visualisation</li>
-        <li>Modelling (e.g. NetLogo)</li>
-        <li>Python Programming</li>
+        <li>A = Data Visualisation</li>
+        <li>B = Agent-Based Modelling</li>
+        <li>C = Data Storytelling</li>
       </ul>
     </section>
 
     <section>
-      <h2>Evidence and Reflections</h2>
-      <p>[Graphs, code, screenshots, diagrams, explanations]</p>
+      <h2>Data Visualisation (A)</h2>
+      <p>The data visualisation skill did not eventuate in the way I foresaw. While I envisioned digital data display, a conversation with Tritian led to physical collection of data, and display, with colour-coded responses. I was happy with the way the data was shown; however, I would also like to explore further visualisation tools and create digital displays.</p>
+
+      <h2>Agent-Based Modelling (B)</h2>
+      <p>I have been doing the agent-based modelling course, offered by the Santa Fe Institute on their learning platform - Complexity Explorer. Along with researching agent-based modelling as a methodology, and having conversations with others, including Sungyeon.</p>
+
+      <h2>Data Storytelling (C)</h2>
+      <p>I have adapted Show Me (the Data) to include the story of the data as a way of creating process - the idea came during fortnight 5. I haven’t had the opportunity to express data stories however; I look forward to further developing this aspect for Checkpoint 3.</p>
     </section>
 
     <section>
-      <h2>Growth Across Checkpoints</h2>
-      <p>[Checkpoint documentation and self-review]</p>
+      <h2>Evidence Gallery</h2>
+      <div class="carousel">
+        <img src="images/paddlepops.jpg" alt="Paddlepops and colours">
+        <img src="images/wall.jpg" alt="Wall of data">
+        <img src="images/codedcolour.jpg" alt="Coded colour">
+      </div>
+    </section>
+
+    <section>
+      <h2>Checkpoints</h2>
+        <img src="images/showmecriteria.jpg" alt="Checkpoint 1 to Checkpoint 2">
     </section>
   </main>
 </body>
