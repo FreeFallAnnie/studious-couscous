@@ -113,6 +113,15 @@ img {
   border-radius: 4px;
 }
 
+footer {
+  background-color: #0f0f0f;
+  color: #ccc;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  border-top: 1px solid #333;
+}
+
 /* Lightbox overlay */
 .lightbox-overlay {
   position: fixed;
