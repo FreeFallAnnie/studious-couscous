@@ -4,6 +4,33 @@
   <meta charset="UTF-8">
   <title>A Little Fuzzy</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .carousel img {
+      flex: 0 0 auto;
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      scroll-snap-align: center;
+      border: 2px solid #ccc;
+    }
+
+    .carousel::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .carousel::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -18,27 +45,48 @@
   <main>
     <section>
       <h2>Skill Description</h2>
-      <p>Science communication with openness to ambiguity and conversation. Includes co-hosting radio and interviewing scientists.</p>
+      <p><strong>A Little Fuzzy</strong> is science communication, with openness to ambiguity and an iterative, exploratory process. I’ve developed this by appearing on the Fuzzy Logic Radio station as a cohost—researching, preparing and delivering content on scientific topics, and interviewing scientists during Pint of Science.</p>
     </section>
 
     <section>
-      <h2>Subskills and Self-Assessment</h2>
+      <h2>Subskills & Self-Assessment</h2>
       <ul>
-        <li>Research</li>
-        <li>Voice Presence</li>
-        <li>Conversational Skills</li>
+        <li>A: Research</li>
+        <li>B: Voice Presence</li>
+        <li>C: Conversational Skills</li>
+        <li>D: Sharing Publicly</li>
       </ul>
-      <!-- add matrix or visual scale here -->
+      <p>Checkpoint 1 to 2 growth is shown in a custom matrix (see reflective narrative below).</p>
     </section>
 
     <section>
-      <h2>Evidence and Reflections</h2>
-      <p>[Placeholder for radio episodes, interview notes, emails, images, etc.]</p>
+      <h2>Reflections</h2>
+      <h3>Research (A)</h3>
+      <p>I learned to quickly extract useful insights from scientific papers and convert them into engaging questions for the show. This marks a big shift from occasional curiosity to deliberate, applied research.</p>
+
+      <h3>Voice Presence (B)</h3>
+      <p>While I started at level 3 due to experience in Toastmasters and voice work, I haven't yet moved to creating my own content. Future work will focus on confidently taking ownership of scripting and delivery.</p>
+
+      <h3>Conversational Skills (C)</h3>
+      <p>Through radio and science events, I've expanded beyond casual talk into purposeful dialogue—one highlight being a thoughtful email of appreciation from interviewee Tirath.</p>
+
+      <h3>Sharing Publicly (D)</h3>
+      <p>I still rely on external cues (e.g. Fuzzy Logic or assessment prompts) to publish work. My goal is to independently publish a project by Checkpoint 3.</p>
     </section>
 
     <section>
-      <h2>Growth Across Checkpoints</h2>
-      <p>[Document your progress and changes from Checkpoint 1 to 3]</p>
+      <h2>Evidence Gallery</h2>
+      <div class="carousel">
+        <img src="images/radio_camille_lucy.jpg" alt="Fuzzy Logic Radio with Camille and Lucy">
+        <img src="images/pint_phillipa_tirath.jpg" alt="Pint of Science interviewees Phillipa and Tirath">
+        <img src="images/thanks_email_tirath.jpg" alt="Thank-you email from Tirath">
+        <img src="images/event_dr_ash_porter.jpg" alt="Pint of Science with Dr Ash Porter">
+      </div>
+    </section>
+
+    <section>
+      <h2>Checkpoint Growth</h2>
+      <p>Skill growth from Checkpoint 1 to 2 is visualized in both narrative and matrix formats. Notable areas of improvement include confidence in live discussions, and ability to independently research science topics for a general audience.</p>
     </section>
   </main>
 </body>
