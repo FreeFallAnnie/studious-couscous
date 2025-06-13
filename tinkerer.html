@@ -101,5 +101,27 @@
         <img src="images/tinkerercriteria.jpg" alt="Checkpoint 1 to Checkpoint 2">
     </section>
   </main>
+  <!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox">
+  <img id="lightbox-img" src="" alt="Expanded image">
+</div>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const images = document.querySelectorAll('.carousel img');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+</script>
+
 </body>
 </html>
