@@ -38,7 +38,7 @@ nav a:hover {
 
 main {
   padding: 2em;
-  max-width: 700px;
+  max-width: 600px;
   margin: auto;
   background-color: #fafafa;
   color: #222;
@@ -146,11 +146,11 @@ img {
   }
 
   h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 
   h2 {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   .carousel {
